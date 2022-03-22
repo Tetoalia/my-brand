@@ -83,19 +83,19 @@
             <!-- contact section starts -->
 
 <section class="contact" id="contact">
-
+    <h3> CONTACT FORM</h3>
     <div class="container">
         <form action="/action_page.php">
-            <h3> CONTACT FORM</h3>
-          <label for="fname">First Name</label>
+           
+          <label for="fname">First Name:</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
       <br><br>
-          <label for="lname">Last Name</label>
+          <label for="lname">Last Name:</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 <br><br>
           <label for="subject">Subject</label>
           <br><br>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 <br><br>
     <input type="submit" value="Submit">
   </form>
@@ -110,30 +110,38 @@
 <section id="login" class="login">
 
 <div  class="content">
+    <h4> LOG IN FORM </h4>
     <form class="modal-content animate" action="/action_page.php">
-        <div class="imgcontainer">
+        <!-- <div class="imgcontainer">
           <img src="images/mobile-login-concept-illustration_114360-135.webp" alt="Avatar" class="avatar">
-        </div>
+        </div> -->
+        
     
         <div class="container">
-          <label for="uname"><b>Username</b></label>
+          <label for="uname"><b>Username:</b></label>&nbsp;
           <input type="text" placeholder="Enter Username" name="uname" required>
-    
-          <label for="psw"><b>Password</b></label>
+    <br><br><br>
+          <label for="psw"><b>Password:</b></label>&nbsp;
           <input type="password" placeholder="Enter Password" name="psw" required>
-    
-          <button type="submit">Login</button>
-          <label>
+          
+          <br><br><br>
+          <!-- <label>
             <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
+          </label><br><br> -->
         </div>
-    
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
+        <div class="credential">
+            <button type="submit">Login</button>  &nbsp; &nbsp; &nbsp;
+            <button type="button" onclick="document.getElementById('id01')" class="cancelbtn">Cancel</button>
         </div>
+        <br>
+        <span class="psw"> <a href="#"> Forgot password?</a></span>
+        <br><br>
+        <p>Don't have an account?&nbsp; &nbsp;<span><a href="#">SignUp</a></span></p>
     </div>
       </form>
+</section>
+<!-- End of log in section -->
+<section>
 </section>
 <script src="script.js"></script>
             </body>
