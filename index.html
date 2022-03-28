@@ -7,7 +7,7 @@
     <title>Alia's personal portfolio</title>
     <link rel="stylesheet" href="file.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 </head>
 <body>
@@ -18,10 +18,11 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#">portfolio</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact Me</a></li>
                 <li><a href="#login">LogIn</a></li>
-                <li><a href="#">SignUp</a></li>
+                
             </ul>
             
             <div class="hamburger">
@@ -79,13 +80,82 @@
                 </div>
             </div>
             </section>  
+<!-- skills page is starting here -->
+
+<section id="skills" class="skills">
+    <p>HTML</p>
+    <div class="container">
+        <div class="html">90%</div>
+    </div>
+    <br>
+
+    <p>CSS</p>
+    <div class="container">
+      <div class="css">80%</div>
+    </div>
+
+    <br>
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="js">75%</div>
+    </div>
+    
+    <br>
+    <p>Java</p>
+    <div class="container">
+        <div class="java">65%</div>
+      </div>
+      <br>
+
+      <p>PHP</p>
+      <div class="container">
+        <div class="php">60%</div>
+      </div>
+      <br>
+
+    <p>Figma</p>
+    <div class="container">
+        <div class
+        ="figma">55%</div>
+      </div>
+    <br>
+
+    <p>Trello</p>
+    <div class="container">
+        <div class
+        ="trello">50%</div>
+      </div>
+<br> 
+</section>
+<!-- skills section ends here -->
+
+<!-- This the starting of portifolio page -->
+
+<section id="portfolio" class="portfolio">
+<div class="content">
+  <p>
+    WELCOME TO MY PORTFOLIO...
+    YOU WILL BE AMAZED BY MY WORK.
+  </p>
+</div>
+</section>
+<!-- the end of portifolio page -->
+
+<!-- blog section starts here -->
+<section id="blog" class="blog">
+<div class="content">
+  Here is about my blog!!!
+Welcome...
+</div>
+</section>
+<!-- blog section ends here -->
 
             <!-- contact section starts -->
 
 <section class="contact" id="contact">
     <h3> CONTACT FORM</h3>
     <div class="container">
-        <form action="/action_page.php">
+        <form action="#">
            
           <label for="fname">First Name:</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -97,7 +167,7 @@
           <br><br>
     <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
 <br><br>
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" >
   </form>
 </div>
 
@@ -111,7 +181,7 @@
 
 <div  class="content">
     <h4> LOG IN FORM </h4>
-    <form class="modal-content animate" action="/action_page.php">
+    <form class="modal-content animate" action="dashboard.html">
         <!-- <div class="imgcontainer">
           <img src="images/mobile-login-concept-illustration_114360-135.webp" alt="Avatar" class="avatar">
         </div> -->
@@ -130,19 +200,110 @@
           </label><br><br> -->
         </div>
         <div class="credential">
+          <a href="dashboard.html">
             <button type="submit">Login</button>  &nbsp; &nbsp; &nbsp;
+          </a>
+            
             <button type="button" onclick="document.getElementById('id01')" class="cancelbtn">Cancel</button>
         </div>
         <br>
         <span class="psw"> <a href="#"> Forgot password?</a></span>
         <br><br>
-        <p>Don't have an account?&nbsp; &nbsp;<span><a href="#">SignUp</a></span></p>
+        <p>Don't have an account?&nbsp; &nbsp;<span><a href="#signup">SignUp</a></span></p>
     </div>
+
       </form>
 </section>
 <!-- End of log in section -->
-<section>
+
+<!-- The start of a signup page -->
+<section id="signup" class="signup">
+    <h1>Sign Up</h1>
+    <form class="form_content">
+        <div class="container">
+          
+          <p>Please fill in this form to create an account.</p>
+          
+      <br> <br>
+          <label for="email"><b>Email:  </b></label>&nbsp;
+          <input type="text" placeholder="Enter Email" name="email" required>
+      <br><br>
+          <label for="psw"><b>Password:  </b></label>
+          <input type="password" placeholder="Enter Password:" name="psw" required>
+      <br><br>
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br><br>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" > Remember me
+          </label>
+      <br><br>
+          <p>By creating an account you agree to our <a href="#" >Terms & Privacy</a>.</p>
+      <br><br>
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+    
+          </div>
+          <br>
+          <p>Already have an account?<a href="#login">login</a></p>
+        </div>
+      </form>
 </section>
-<script src="script.js"></script>
+
+<!-- the dashboard section -->
+
+<!-- <section class="dashboard">
+<div class="container">
+  <div class="navigation">
+    <ul>
+      <li>
+        <span class="icon"></span>
+        <span class="title"><h2>Brand name</h2></span>
+      </li>
+      <li>
+        <span class="icon"></span>
+        <span class="title"><h2>Dashboard</h2></span>
+        <li>
+          <span class="icon"></span>
+          <span class="title">customers</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="title">Messages</span>
+        </li>
+      </li>
+      <li>
+        <span class="icon"></span>
+        <span class="title">Help</span>
+      </li>  <li>
+        <span class="icon"></span>
+        <span class="title">Settings</span>
+      </li>  <li>
+        <span class="icon"></span>
+        <span class="title"><h2>Password</h2></span>
+      </li>  <li>
+        <span class="icon"></span>
+        <span class="title"><h2>Sign out</h2></span>
+      </li>
+    </ul>
+  </div>
+</div>
+</section> -->
+
+
+
+<!-- javascript starts here -->
+<script src="script.js">
+    let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+</script>
             </body>
 </html>

@@ -284,6 +284,79 @@ background: skyblue;
   color: white;
   font-size: 15px;
 }
+/* signup styles */
+.signup {
+  background-color: black;
+  min-height: 100vh;
+}
+.signup .form_content {
+  align-items: center;
+  padding-top: 60px;
+  color: white;
+  padding-left: 450px;
+}
+
+.signup h1 {
+  color: dodgerblue;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 90px;
+}
+/* skills style */
+
+/* Make sure that padding behaves as expected */
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Container for skill bars */
+.skills .container {
+  width: 70%; /* Full width */
+  background-color: black; /* Grey background */
+  padding-top: 8px;
+}
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 150px; /* Add top padding */
+  padding-bottom: 40px; /* Add bottom padding */
+  color: white; /* White text color */
+  background-color: black;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.skills .html {
+  width: 90%;
+  background-color: dodgerblue;
+} /* Green */
+.skills .css {
+  width: 80%;
+  background-color: dodgerblue;
+} /* Blue */
+.skills .js {
+  width: 75%;
+  background-color: dodgerblue;
+} /* Red */
+.skills .java {
+  width: 70%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .php {
+  width: 65%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .trello {
+  width: 50%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .figma {
+  width: 55%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+
 /* media querries */
 
 /* @media screen and (max-width: 700px) {
@@ -291,7 +364,32 @@ background: skyblue;
     display: none;
   }
 } */
+/* blog styles */
+.blog {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+.blog .content {
+  color: white;
+  padding-top: 120px;
+  padding-left: 120px;
+  font-size: 30px;
+}
+/* blog styles ends here */
 
+/* portfolio styles starts here */
+.portfolio {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+.portfolio .content {
+  padding-top: 120px;
+  color: white;
+  font-size: 20px;
+  padding-left: 50px;
+}
 @media screen and (min-width: 300px) {
   .hamburger {
     display: none;
