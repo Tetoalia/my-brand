@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+
+/*nav bar styling*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding-top: 20px;
+  /* background: skyblue;  */
+  font-family: "ubuntu", sans-serif;
+}
+/* .navbar.sticky{
+padding: 30px 0;
+background: skyblue;
+} */
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+.navbar .logo a span {
+  color: dodgerblue;
+}
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: dodgerblue;
+}
+.hamburger {
+  /* padding-left: 800px; */
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
+}
+
+/* home section styling */
+.home {
+  display: flex;
+  background-image: url("images/DSC_3285.jpg");
+  background-size: contain;
+  height: 100vh;
+  font-family: Helvetica;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: right;
+}
+.home .max-width {
+  margin: auto 0 auto 40px;
+}
+.home .home-content {
+  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.home .home-content .text-1 {
+  color: white;
+  margin-right: 50px;
+  font-size: 40px;
+  font-family: "Times New Roman";
+  letter-spacing: 2px;
+}
+.home .home-content .text-2 {
+  font-weight: 600;
+  margin-right: 35px;
+  color: white;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-left: 40%;
+  margin-bottom: 20px;
+}
+.home .home-content .text-3 {
+  /* font-weight: 600; */
+  /* margin-left: -3px; */
+  margin-right: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 2px;
+  padding-left: 250px;
+  padding-bottom: 5%;
+}
+.home .home-content .text-4 {
+  font-size: x-large;
+  margin: 5px 0;
+  color: white;
+}
+.home .home-content .text-2 span {
+  color: dodgerblue;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+/* style when the image was below the section tag
+.home .pic-1 img{
+    max-width: 100px;
+    height:auto;
+    border-radius: 50%; */
+
+/* about section styling */
+
+.h1 {
+  color: dodgerblue;
+}
+.about .about-content .text-1 {
+  color: white;
+  text-align: right;
+  font-size: 20px;
+}
+/* .two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    height: 100;
+    background-color: black;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h2 {
+    color:rgb(26, 24, 173);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.profile-content-wrapper p {
+    font-size: 10px;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-family: Helvetica;
+    text-align: center;
+} */
+.my_about {
+  background-color: black;
+  height: 150vhs;
+  padding: 0%;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: center;
+}
+.my_about h2 {
+  color: dodgerblue;
+  font-size: 30px;
+  font-weight: bold;
+  /* margin: 30px; */
+  margin-bottom: 10px;
+}
+/* .my_about p {
+    font-size: 15px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    /* width: 400px; */
+/* border: 30px black; */
+/* Height:50vh; */
+/* padding: 50px; */
+/* margin: 100px 70px 150px 10px 300px; */
+/* }  */
+.my_about .description {
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: white;
+}
+.my_about .description h2 {
+  font-size: 40px;
+}
+
+/* contact styles */
+.contact {
+  background-color: black;
+  min-height: 100vh;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: 100px;
+  padding-left: 90px;
+}
+.contact .container {
+  align-items: center;
+  justify-content: center;
+  padding-left: 350px;
+}
+
+.contact .container form {
+  background-color: black;
+  padding: 2.5%;
+  border: 5px solid dodgerblue;
+  color: white;
+  max-width: 450px;
+}
+.contact h3 {
+  font-size: 30px;
+  font-family: "Times New Roman";
+  text-align: center;
+  text-decoration: dashed;
+  color: dodgerblue;
+}
+.contact .container input[type="submit"] {
+  background-color: dodgerblue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* log in style */
+.login .content {
+  background-color: black;
+  min-height: 100vh;
+}
+.login form {
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 450px;
+  border-style: dotted;
+}
+
+.login label {
+  font-size: 18px;
+  font-family: "Times New Roman";
+  color: white;
+}
+.login .content h4 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: dodgerblue;
+  text-align: center;
+  padding-top: 150px;
+  padding-right: 120px;
+}
+.login .credential button {
+  background-color: dodgerblue;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  size: 2px;
+  font-family: "Times New Roman";
+  padding-left: 20px;
+}
+.login p {
+  color: white;
+  font-size: 15px;
+}
+/* signup styles */
+.signup {
+  background-color: black;
+  min-height: 100vh;
+}
+.signup .form_content {
+  align-items: center;
+  padding-top: 60px;
+  color: white;
+  padding-left: 450px;
+}
+
+.signup h1 {
+  color: dodgerblue;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 90px;
+}
+/* skills style */
+
+/* Make sure that padding behaves as expected */
+/* * {
+  box-sizing: border-box;
+} */
+
+/* Container for skill bars */
+.skills .container {
+  width: 70%; /* Full width */
+  background-color: black; /* Grey background */
+  padding-top: 8px;
+}
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 150px; /* Add top padding */
+  padding-bottom: 40px; /* Add bottom padding */
+  color: white; /* White text color */
+  background-color: black;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.skills .html {
+  width: 90%;
+  background-color: dodgerblue;
+} /* Green */
+.skills .css {
+  width: 80%;
+  background-color: dodgerblue;
+} /* Blue */
+.skills .js {
+  width: 75%;
+  background-color: dodgerblue;
+} /* Red */
+.skills .java {
+  width: 70%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .php {
+  width: 65%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .trello {
+  width: 50%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+.skills .figma {
+  width: 55%;
+  background-color: dodgerblue;
+} /* Dark Grey */
+
+/* media querries */
+
+/* @media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+} */
+/* blog styles */
+.blog {
+  background-color: black;
+  min-height: 100vh;
+  color: white;
+}
+.blog .content {
+  color: white;
+  padding-top: 120px;
+  padding-left: 120px;
+  font-size: 30px;
+}
+/* blog styles ends here */
+
+/* portfolio styles starts here */
+.portfolio {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+.portfolio .content {
+  padding-top: 120px;
+  color: white;
+  font-size: 20px;
+  padding-left: 50px;
+}
+@media screen and (min-width: 300px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+}
